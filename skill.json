@@ -1,0 +1,22 @@
+{
+  "name": "commerce-subscription-billing-skill",
+  "description": "Subscription lifecycle and dunning coordinator skill. Evaluates trial parameters, payment dates, grace period limits, and auto-generates Stripe API subscription drafts.",
+  "version": "1.0.0",
+  "author": "alphaparkinc",
+  "inputs": {
+    "customer_id": { "type": "string" },
+    "plan_id": { "type": "string" },
+    "start_date": { "type": "string" },
+    "billing_interval": { "type": "string", "enum": ["month", "year"] },
+    "payment_failures_count": { "type": "integer", "default": 0 }
+  },
+  "outputs": {
+    "next_billing_date": { "type": "string" },
+    "dunning_status": { "type": "string" },
+    "action_payload": {
+      "type": "object",
+      "description": "Structured Stripe Subscription creation payload."
+    }
+  },
+  "prompt": "You are a subscription billing agent. Calculate next payment dates and grace timelines. If payment_failures_count exceeds 2, flag account status as suspended and generate email notifications."
+}
