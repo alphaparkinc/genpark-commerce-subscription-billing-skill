@@ -1,5 +1,5 @@
 {
-  "name": "commerce-subscription-billing-skill",
+  "name": "genpark-commerce-subscription-billing-skill",
   "description": "GenPark AI Agent Skill - Subscription lifecycle and dunning coordinator skill. Evaluates trial parameters, payment dates, grace period limits, and auto-generates Stripe API subscription drafts.",
   "version": "1.0.0",
   "author": "genpark",
