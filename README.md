@@ -1,4 +1,4 @@
-# commerce-subscription-billing-skill
+# genpark-commerce-subscription-billing-skill
 
 > **GenPark AI Agent Skill** -- # Commerce Subscription Billing & Dunning Skill
 
