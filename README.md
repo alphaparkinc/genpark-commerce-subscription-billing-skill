@@ -1,4 +1,6 @@
-# Commerce Subscription Billing & Dunning Skill
+# commerce-subscription-billing-skill
+
+> **GenPark AI Agent Skill** -- # Commerce Subscription Billing & Dunning Skill
 
 This repository contains the **Commerce Subscription Billing & Dunning Skill** — an agent configuration skill config (`skill.json`), a production-ready Python SDK client (`subscription_billing.py`), and executable verification tests. It is designed to compute subscriber payment offsets, track collection failures (dunning), and format Stripe API payloads.
 
